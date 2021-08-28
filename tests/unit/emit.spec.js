@@ -43,7 +43,7 @@ describe("emit", () => {
     expect(data).toEqual({ username: "alice" });
   });
 
-  it("emits an event with two arguments", () => {
+  it("emits an event containing name and password arguments", () => {
     const wrapper = shallowMount(Emitter);
 
     wrapper.vm.emitEvent();
